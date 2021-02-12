@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Image, StatusBar, Text, TouchableOpacity } from "react-native";
+import { View, StatusBar, TouchableOpacity } from "react-native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Ionicons } from "@expo/vector-icons";
@@ -12,7 +12,6 @@ import { People } from "./screens/People";
 
 // # Chat
 import { ChooseChat } from "./screens/chat/ChooseChat";
-import AddContact from "./screens/chat/AddContact";
 import Chat from "./screens/chat/Chat";
 
 // # Info

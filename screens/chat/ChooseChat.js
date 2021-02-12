@@ -1,29 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
-import { useNavigation } from "@react-navigation/native";
-import { ScrollView, View, Image, Text, TouchableOpacity } from "react-native";
+import { ScrollView, View, Text, TouchableOpacity } from "react-native";
 import { fetchChats } from "../../api/chat";
 import { loadChatsAction } from "../../redux/chatActions";
 
 // Components
 import LoadingIndicator from "../../components/LoadingIndicator";
-import ImageButton from "../../components/ImageButton";
-import { roundToNearestPixel } from "react-native/Libraries/Utilities/PixelRatio";
 
 const dayjs = require("dayjs");
-
-export const ChooseChatHeaderRight = () => {
-    const navigation = useNavigation();
-
-    const handlePress = () => {
-        navigation.navigate("AddContact");
-    };
-
-    return (
-        <View style={{ marginRight: 10 }}>
-        </View>
-    );
-};
 
 const _ChooseChat = ({ navigation, chats, loadChatsAction }) => {
 

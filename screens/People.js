@@ -1,16 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
-import { useNavigation } from "@react-navigation/native";
-import { StyleSheet, ScrollView, View, TouchableOpacity, Text, Image, Dimensions } from "react-native";
-import { Ionicons } from "@expo/vector-icons";
-import { fetchUsers, fetchUsersByTag } from "../api/users";
+import { StyleSheet, ScrollView, View, Text, Image, Dimensions } from "react-native";
+import { fetchUsers } from "../api/users";
 import { addChat } from "../api/chat";
 
 import SwipeCards from "react-native-swipe-cards-deck";
 import { auth, db } from "../config";
-
-// Components
-import LoadingIndicator from "../components/LoadingIndicator";
 
 const screen = Dimensions.get('screen');
 

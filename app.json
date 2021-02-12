@@ -36,7 +36,6 @@
       "icon": "./assets/icon_android.png",
       "versionCode": 1,
       "package": "pt.hanselgretel.instaConnect",
-      "googleServicesFile": "./google-services.json",
       "permissions": [
         "MANAGE_DOCUMENTS",
         "READ_EXTERNAL_STORAGE",

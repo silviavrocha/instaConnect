@@ -3,8 +3,6 @@ import { connect } from "react-redux";
 import { StyleSheet, View, Text, TextInput, Dimensions, TouchableOpacity, Alert, Image } from "react-native";
 import { signUpAction } from "../../redux/authActions";
 import { auth, db } from "../../config";
-//import * as Notifications from 'expo-notifications';
-import * as Permissions from 'expo-permissions';
 
 // Components
 import LoadingIndicator from "../../components/LoadingIndicator";

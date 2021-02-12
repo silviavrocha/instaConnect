@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
-import { StyleSheet, View, Text, TextInput, TouchableOpacity, Platform, Image } from "react-native";
+import { StyleSheet, View, Text, TextInput, TouchableOpacity, Image } from "react-native";
 import * as ImagePicker from 'expo-image-picker';
 import { signOutAction, updateUserAction } from "../redux/authActions";
 import { auth, db } from "../config";
@@ -31,14 +31,7 @@ const Profile = ({ user, signOutAction, updateUserAction }) => {
         const array = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/.exec(newEmail);
         setShowEmailError(newEmail !== "" && array === null);
         setShowPasswordError(newPassword !== confirmNewPassword);
-        // (async () => {
-        //     if (Platform.OS !== 'web') {
-        //         const { status } = await ImagePicker.requestMediaLibraryPermissionsAsync();
-        //         if (status !== 'granted') {
-        //             alert('Sorry, we need camera roll permissions to make this work!');
-        //         }
-        //     }
-        // })();
+
     }, [newEmail, newPassword, confirmNewPassword, image]);
 
     const pickImage = async () => {

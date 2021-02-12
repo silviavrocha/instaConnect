@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
-import { StyleSheet, View, Text, TextInput, Dimensions, TouchableOpacity, Alert, Image, KeyboardAvoidingView } from "react-native";
+import { StyleSheet, View, Text, TextInput, Dimensions, TouchableOpacity, Alert, Image } from "react-native";
 import { signInAction } from "../../redux/authActions";
 import { auth, db } from "../../config";
 

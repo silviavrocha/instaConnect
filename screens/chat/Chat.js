@@ -8,7 +8,6 @@ import { auth, db } from "../../config";
 
 // Components
 import LoadingIndicator from "../../components/LoadingIndicator";
-import { ChatActionTypes } from "../../redux/actionTypes";
 
 const Chat = ({ chat, id, messages, updateChatAction, loadMessagesAction }) => {
 
