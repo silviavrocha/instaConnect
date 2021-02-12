@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "InstaConnect",
+    "slug": "instaconnect",
+    "privacy": "public",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon_android.png",
+    "splash": {
+      "image": "./assets/splash_screen.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#eaeaea"
+    },
+    "updates": {
+      "enabled": true,
+      "checkAutomatically": "ON_LOAD",
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "usesIcloudStorage": true,
+      "buildNumber": "1.0.0",
+      "bundleIdentifier": "pt.hanselgretel.instaConnect",
+      "icon": "./assets/icon_android.png",
+      "requireFullScreen": true
+    },
+    "android": {
+      "icon": "./assets/icon_android.png",
+      "versionCode": 1,
+      "package": "pt.hanselgretel.instaConnect",
+      "googleServicesFile": "./google-services.json",
+      "permissions": [
+        "MANAGE_DOCUMENTS",
+        "READ_EXTERNAL_STORAGE",
+        "VIBRATE",
+        "WAKE_LOCK",
+        "com.android.launcher.permission.INSTALL_SHORTCUT",
+        "com.google.android.c2dm.permission.RECEIVE",
+        "com.google.android.gms.permission.ACTIVITY_RECOGNITION",
+        "com.google.android.providers.gsf.permission.READ_GSERVICES",
+        "com.htc.launcher.permission.READ_SETTINGS",
+        "com.htc.launcher.permission.UPDATE_SHORTCUT",
+        "com.majeur.launcher.permission.UPDATE_BADGE",
+        "com.sonyericsson.home.permission.BROADCAST_BADGE"
+      ]
+    }
+  }
+}
